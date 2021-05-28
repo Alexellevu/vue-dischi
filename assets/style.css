@@ -3,3 +3,26 @@
     margin: 0;
     padding: 0;
 }
+
+header img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.top{
+    background-color:#2E3A46;;
+}
+
+/* MAIN PRINCIPALE */
+
+.container{
+    background-color:#1E2D3B; ;
+    height:100vh ;
+}
+
+
+.disk{
+    background-color:#2E3A46;
+}
