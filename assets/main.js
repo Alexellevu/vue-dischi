@@ -18,10 +18,7 @@ const app = new Vue({
             console.log(response.data.response);
            this.albums = response.data.response;
            console.log(this.albums);
-
-           
-
-        })
+         })
         
     
     }

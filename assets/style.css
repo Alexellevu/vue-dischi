@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body{
+    height: 100%;
+    background-color:#1E2D3B; 
+}
+
 header img{
  border-radius: 200px;
  margin: 10px;
@@ -25,23 +30,41 @@ header img{
 /* MAIN PRINCIPALE */
 
 .container{
-    background-color:#1E2D3B; ;
-    height:100vh ;
+    background-color:#1E2D3B; 
+    height:100%;
     display: flex;
-    flex-wrap:nowrap
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top: 5rem;
+    
 }
 
 
 .disk{
     background-color:#2E3A46;
     color: white;
-    padding: 20px 10px;
+    width: 200px;
+    margin: 10px 10px;
+    text-align: center;
+    font-family:sans-serif;
+    font-size:smaller;
+    text-transform: uppercase;
+    padding: 30px 10px 30px 0;
     
 }
 
 .disk img{
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 150px;
+    max-height: 1500px;
+}
+
+.disk h3{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.disk h5{
+    color:rgb(121, 105, 105);
 }
 
 
