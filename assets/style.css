@@ -9,6 +9,8 @@ body{
     background-color:#1E2D3B; 
 }
 
+
+/* header con logo */
 header img{
  border-radius: 200px;
  margin: 10px;
@@ -20,11 +22,26 @@ header img{
    
     overflow: hidden;
     border-radius: 200px;
+    
 }
 
 
 .top{
-    background-color:#2E3A46;;
+    background-color:#2E3A46;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top select{
+    width: 10rem;
+    font-size: larger;
+    background-color:cyan;
+    padding: 5px 10px;
+    
 }
 
 /* MAIN PRINCIPALE */

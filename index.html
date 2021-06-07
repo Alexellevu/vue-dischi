@@ -12,25 +12,37 @@
 <body>
     <header>
         <div class="top" >
-         <div class="cropper"><img src="./img/spotyfy.jpg" alt=""></div>   
+         <div class="cropper"><img src="./img/spotyfy.jpg" alt=""></div>  
+         
+         <div class="scelta_genere">
+             <label for="">Seleziona un genere Musicale</label>
+             <select name="" id="genere">
+                 <option value="All">All</option>
+                 <option value="Rock">Rock</option>
+                 <option value="Metal">Metal</option>
+                 <option value="Pop">Pop</option>
+                 <option value="Jazz">Jazz</option>
+             </select>
+         </div>
         </div>
     </header>
 
     <main>
         <div class="container" id="app" >
-            
+          <!-- lista album creata dinamicamente con vuejs e axios -->  
             <div class="disk" v-for="album in albums" >
                 <img :src="album.poster" alt="">
-                <h3> {{album.title}}</h3>
+                <h3>{{album.title}}</h3>
                 <h5>{{album.author}}</h5>  
                 <h5>{{album.year}}</h5> 
             </div>
         </div>
     </main>
     
+    <!-- VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
    
-   
+   <!-- AXIOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script src="./assets/main.js"></script>

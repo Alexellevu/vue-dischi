@@ -25,3 +25,6 @@ const app = new Vue({
 
 
 })
+
+//BONUS: Creare una select con tutti i generi dei dischi. In base a cosa scegliamo nella select, vedremo i corrispondenti cd.
+//BONUS 2: Ordinare i dischi per anno di uscita.
