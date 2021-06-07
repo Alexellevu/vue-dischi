@@ -3,7 +3,7 @@ const app = new Vue({
 
     data:{
      archive:[],
-        poster:[]
+    
     },
 
     methods: {
@@ -18,12 +18,6 @@ const app = new Vue({
             console.log(response.data.response);
            this.archive.push(response.data.response);
            console.log(this.archive);
-
-            this.poster.push(response.data);
-            console.log(this.poster);
-
-            
-            
         })
         
     
