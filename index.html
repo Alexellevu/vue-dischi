@@ -17,13 +17,13 @@
     </header>
 
     <main>
-        <div class="container" id="app">
+        <div class="container" id="app" >
             
-            <div class="disk" v-for="(album, index) in archive" >
-                <img :src="album[0].poster" alt="">
-                <h3> {{album[0].title}}</h3>
-                <h5>{{album[0].author}}</h5>  
-                <h5>{{album[0].year}}</h5> 
+            <div class="disk" v-for="album in albums" >
+                <img :src="album.poster" alt="">
+                <h3> {{album.title}}</h3>
+                <h5>{{album.author}}</h5>  
+                <h5>{{album.year}}</h5> 
             </div>
         </div>
     </main>

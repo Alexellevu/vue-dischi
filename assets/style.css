@@ -27,16 +27,21 @@ header img{
 .container{
     background-color:#1E2D3B; ;
     height:100vh ;
+    display: flex;
+    flex-wrap:nowrap
 }
 
 
 .disk{
     background-color:#2E3A46;
     color: white;
-    padding-top: 20px;
+    padding: 20px 10px;
+    
 }
 
 .disk img{
     max-width: 120px;
     max-height: 120px;
 }
+
+
