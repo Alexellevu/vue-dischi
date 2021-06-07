@@ -12,22 +12,29 @@
 <body>
     <header>
         <div class="top" >
-            <img src="./img/c29bc98759fbe4080c8848dea435d202.jpg" alt="">
+         <div class="cropper"><img src="./img/spotyfy.jpg" alt=""></div>   
         </div>
     </header>
 
     <main>
         <div class="container" id="app">
             
-            <div class="disk">
-                <p></p>
+            <div class="disk" v-for="(album, index) in archive" >
+                <img :src="album[0].poster" alt="">
+                <h3> {{album[0].title}}</h3>
+                <h5>{{album[0].author}}</h5>  
+                <h5>{{album[0].year}}</h5> 
+
+               
             </div>
         </div>
     </main>
     
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="./assets/main.js"></script>
 </body>
 </html>

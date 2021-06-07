@@ -2,8 +2,8 @@ const app = new Vue({
     el: '#app',
 
     data:{
-     archive:[]
-
+     archive:[],
+        poster:[]
     },
 
     methods: {
@@ -15,9 +15,15 @@ const app = new Vue({
         axios
         .get('https://flynn.boolean.careers/exercises/api/array/music')
         .then(response => {
+            console.log(response.data.response);
+           this.archive.push(response.data.response);
+           console.log(this.archive);
+
+            this.poster.push(response.data);
+            console.log(this.poster);
+
             
-          archive =response.data;
-          console.log(archive);
+            
         })
         
     

@@ -5,11 +5,18 @@
 }
 
 header img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-    margin: 10px;
+ border-radius: 200px;
+ margin: 10px;
+ height: 3rem;
+ width: 3rem;
 }
+
+.cropper{
+   
+    overflow: hidden;
+    border-radius: 200px;
+}
+
 
 .top{
     background-color:#2E3A46;;
@@ -26,4 +33,10 @@ header img{
 .disk{
     background-color:#2E3A46;
     color: white;
+    padding-top: 20px;
+}
+
+.disk img{
+    max-width: 120px;
+    max-height: 120px;
 }
