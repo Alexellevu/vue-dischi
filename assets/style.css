@@ -72,16 +72,18 @@ header img{
 
 .disk img{
     max-width: 150px;
-    max-height: 1500px;
+    max-height: 150px;
 }
 
 .disk h3{
     margin-top: 40px;
     margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .disk h5{
-    color:rgb(121, 105, 105);
+    color:#777C74;
 }
 
 

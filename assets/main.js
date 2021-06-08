@@ -3,6 +3,7 @@ const app = new Vue({
 
     data:{
      albums:'',
+     error:''
         
     },
 
@@ -18,6 +19,10 @@ const app = new Vue({
             console.log(response.data.response);
            this.albums = response.data.response;
            console.log(this.albums);
+         })
+         .catch(e => {
+             console.error(e);
+             this.error ='non è possibile connettersi all API'
          })
         
     
